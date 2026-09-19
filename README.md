@@ -27,3 +27,6 @@ QVAC SDK
 Local AI model
     ↓
 Grammar correction
+## Demo
+
+![GrammarFix Demo](public/screenshots/demo.png)
