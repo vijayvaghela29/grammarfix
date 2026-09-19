@@ -49,18 +49,22 @@ app.post("/api/check", async (req, res) => {
     }
 
     const prompt = `
-You are an English grammar checker.
+You are a careful English grammar checker.
 
-Correct the grammar, spelling, punctuation, and sentence structure
-of the following text.
+Correct only genuine grammar, spelling, punctuation, and clarity
+problems in the user's text.
 
-Return exactly in this format:
+Do NOT change correct phrases unnecessarily.
+Preserve the original meaning.
+Do NOT invent errors.
+
+Return exactly this format:
 
 CORRECTED:
 <corrected text>
 
 EXPLANATION:
-<short explanation>
+<short explanation of only the changes you actually made>
 
 Text:
 ${text}
