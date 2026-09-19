@@ -131,9 +131,13 @@ app.listen(PORT, async () => {
 process.on("SIGINT", async () => {
   console.log("\n🛑 Shutting down...");
 
-  if (modelId) {
-    await unloadModel({ modelId });
+  try {
+    if (modelId) {
+      await unloadModel({ modelId });
+    }
+  } catch (error) {
+    console.warn("⚠️ Model unload failed; exiting anyway.");
+  } finally {
+    process.exit(0);
   }
-
-  process.exit(0);
 });
