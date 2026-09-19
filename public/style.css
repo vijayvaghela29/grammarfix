@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 50px auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #1e293b;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 52px;
+  margin: 5px 0;
+}
+
+h1 span {
+  color: #38bdf8;
+}
+
+header p {
+  color: #94a3b8;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: white;
+  font-size: 16px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #38bdf8;
+  color: #082f49;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#status {
+  margin-top: 15px;
+  color: #94a3b8;
+}
+
+.result-card h2 {
+  margin-top: 0;
+}
+
+.result-card h2:nth-of-type(2) {
+  margin-top: 25px;
+}
+
+#correctedText,
+#explanation {
+  background: #0f172a;
+  padding: 18px;
+  border-radius: 12px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  margin-top: 25px;
+}
